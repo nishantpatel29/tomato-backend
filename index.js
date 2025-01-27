@@ -22,4 +22,4 @@ import orderRouter from './routes/orderRoute.js'
     res.send("server is working corrrectly")
  })
 
-app.listen(8000)
+app.listen(process.env.PORT||8000)

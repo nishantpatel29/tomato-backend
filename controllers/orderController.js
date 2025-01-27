@@ -1,8 +1,8 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import Stripe from "stripe";
-const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
-const url=process.env.URL_
+const stripe=new Stripe("sk_test_51PsLqw2NZek3tvzCNWjdp6OUISXKeNpW0QNbINyhGP4bKkzMp8ceH3Alw210jwPFtF55SQIPf8fmlv287oqkdBYn00soX7AOaX")
+const url="http://localhost:5173"
  export const placeOrder=async(req,res)=>{
 try {
     const{userId,items,amount,address}=req.body
