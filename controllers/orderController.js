@@ -2,7 +2,7 @@ import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
 import Stripe from "stripe";
 const stripe=new Stripe("sk_test_51PsLqw2NZek3tvzCNWjdp6OUISXKeNpW0QNbINyhGP4bKkzMp8ceH3Alw210jwPFtF55SQIPf8fmlv287oqkdBYn00soX7AOaX")
-const url="https://tomato-nishant.netlify.app/"
+const url="https://tomato-nishant.netlify.app"
  export const placeOrder=async(req,res)=>{
 try {
     const{userId,items,amount,address}=req.body
